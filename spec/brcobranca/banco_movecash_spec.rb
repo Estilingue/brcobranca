@@ -99,4 +99,10 @@ describe Brcobranca::Boleto::Movecash do
     File.stat(boleto_novo.logotipo).zero?.should be_false
   end
 
+  it "should not generate boleto with invalid attributes" do
+    boleto_novo = Brcobranca::Boleto::Movecash.new
+    lambda { boleto_novo.codigo_barras }.should raise_error(Brcobranca::BoletoInvalido)
+    boleto_novo.errors.count.should eql(2)
+  end
+
 end

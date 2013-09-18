@@ -105,22 +105,22 @@ module Brcobranca
     autoload :Caixa,         'brcobranca/boleto/caixa'
     autoload :Sicredi,       'brcobranca/boleto/sicredi'
     autoload :Santander,     'brcobranca/boleto/santander'
-    autoload :Movecash,     'brcobranca/boleto/movecash'
+    autoload :Movecash,      'brcobranca/boleto/movecash'
 
     # Módulos para classes de template
     module Template
-      autoload :Base,   'brcobranca/boleto/template/base'
-      autoload :Rghost, 'brcobranca/boleto/template/rghost'
-      autoload :RghostCarne, 'brcobranca/boleto/template/rghost_carne'
+      autoload :Base,          'brcobranca/boleto/template/base'
+      autoload :Rghost,        'brcobranca/boleto/template/rghost'
+      autoload :RghostCarne,   'brcobranca/boleto/template/rghost_carne'
     end
   end
 
   # Módulos para classes de retorno bancário
   module Retorno
-    autoload :Base,           'brcobranca/retorno/base'
-    autoload :RetornoCbr643,  'brcobranca/retorno/retorno_cbr643'
-    autoload :RetornoCnab240,  'brcobranca/retorno/retorno_cnab240'
-    autoload :RetornoCnab400,  'brcobranca/retorno/retorno_cnab400'
+    autoload :Base,             'brcobranca/retorno/base'
+    autoload :RetornoCbr643,    'brcobranca/retorno/retorno_cbr643'
+    autoload :RetornoCnab240,   'brcobranca/retorno/retorno_cnab240'
+    autoload :RetornoCnab400,   'brcobranca/retorno/retorno_cnab400'
   end
 end
 
